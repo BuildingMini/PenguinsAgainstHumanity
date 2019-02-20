@@ -1,22 +1,15 @@
+
 <?xml version="1.0" encoding="UTF-8" ?>
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
-<%@ page import="com.google.inject.Injector" %>
-<%@ page import="com.google.inject.Key" %>
-<%@ page import="com.google.inject.TypeLiteral" %>
-<%@ page import="javax.servlet.http.HttpSession" %>
-<%@ page import="net.socialgamer.cah.CahModule.AllowBlankCards" %>
-<%@ page import="net.socialgamer.cah.RequestWrapper" %>
-<%@ page import="net.socialgamer.cah.StartupUtils" %>
-<%@ page import="net.socialgamer.cah.data.GameOptions" %>
-<%
-// Ensure a session exists for the user.
-@SuppressWarnings("unused")
-HttpSession hSession = request.getSession(true);
-RequestWrapper wrapper = new RequestWrapper(request);
-ServletContext servletContext = pageContext.getServletContext();
-Injector injector = (Injector) servletContext.getAttribute(StartupUtils.INJECTOR);
-boolean allowBlankCards = injector.getInstance(Key.get(new TypeLiteral<Boolean>(){}, AllowBlankCards.class));
-%>
+
+
+
+
+
+
+
+
+
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -70,7 +63,7 @@ boolean allowBlankCards = injector.getInstance(Key.get(new TypeLiteral<Boolean>(
   <span id="nickbox_error" class="error"></span>
   <span id="note"></span>
   <p id="footer">
-    Pelican CAH is a Cards Against Humanity clone, which is available at
+    Pelican CAHis a Cards Against Humanity clone, which is available at
     <a href="http://www.cardsagainsthumanity.com/">cardsagainsthumanity.com</a>, where you can buy it
     or download and print it out yourself. It is based off of <a href="https://github.com/ajanata/PretendYoureXyzzy">Pretend You're Xyzzy</a>
     and is distributed under a
@@ -368,32 +361,230 @@ boolean allowBlankCards = injector.getInstance(Key.get(new TypeLiteral<Boolean>(
       <legend>Game options:</legend>
       <label id="score_limit_template_label" for="score_limit_template">Score limit:</label>
       <select id="score_limit_template" class="score_limit">
-        <%
-          for (int i = GameOptions.MIN_SCORE_LIMIT; i <= GameOptions.MAX_SCORE_LIMIT; i++) {
-        %>
-          <option <%= i == GameOptions.DEFAULT_SCORE_LIMIT ? "selected='selected' " : "" %>value="<%= i %>"><%= i %></option>
-        <% } %>
+        
+          <option value="4">4</option>
+        
+          <option value="5">5</option>
+        
+          <option value="6">6</option>
+        
+          <option value="7">7</option>
+        
+          <option selected='selected' value="8">8</option>
+        
+          <option value="9">9</option>
+        
+          <option value="10">10</option>
+        
+          <option value="11">11</option>
+        
+          <option value="12">12</option>
+        
+          <option value="13">13</option>
+        
+          <option value="14">14</option>
+        
+          <option value="15">15</option>
+        
+          <option value="16">16</option>
+        
+          <option value="17">17</option>
+        
+          <option value="18">18</option>
+        
+          <option value="19">19</option>
+        
+          <option value="20">20</option>
+        
+          <option value="21">21</option>
+        
+          <option value="22">22</option>
+        
+          <option value="23">23</option>
+        
+          <option value="24">24</option>
+        
+          <option value="25">25</option>
+        
+          <option value="26">26</option>
+        
+          <option value="27">27</option>
+        
+          <option value="28">28</option>
+        
+          <option value="29">29</option>
+        
+          <option value="30">30</option>
+        
+          <option value="31">31</option>
+        
+          <option value="32">32</option>
+        
+          <option value="33">33</option>
+        
+          <option value="34">34</option>
+        
+          <option value="35">35</option>
+        
+          <option value="36">36</option>
+        
+          <option value="37">37</option>
+        
+          <option value="38">38</option>
+        
+          <option value="39">39</option>
+        
+          <option value="40">40</option>
+        
+          <option value="41">41</option>
+        
+          <option value="42">42</option>
+        
+          <option value="43">43</option>
+        
+          <option value="44">44</option>
+        
+          <option value="45">45</option>
+        
+          <option value="46">46</option>
+        
+          <option value="47">47</option>
+        
+          <option value="48">48</option>
+        
+          <option value="49">49</option>
+        
+          <option value="50">50</option>
+        
+          <option value="51">51</option>
+        
+          <option value="52">52</option>
+        
+          <option value="53">53</option>
+        
+          <option value="54">54</option>
+        
+          <option value="55">55</option>
+        
+          <option value="56">56</option>
+        
+          <option value="57">57</option>
+        
+          <option value="58">58</option>
+        
+          <option value="59">59</option>
+        
+          <option value="60">60</option>
+        
+          <option value="61">61</option>
+        
+          <option value="62">62</option>
+        
+          <option value="63">63</option>
+        
+          <option value="64">64</option>
+        
+          <option value="65">65</option>
+        
+          <option value="66">66</option>
+        
+          <option value="67">67</option>
+        
+          <option value="68">68</option>
+        
+          <option value="69">69</option>
+        
       </select>
       <br/>
       <label id="player_limit_template_label" for="player_limit_template">Player limit:</label>
       <select id="player_limit_template" class="player_limit"
           aria-label="Player limit. Having more than 10 players may cause issues both for screen readers and traditional browsers.">
-        <%
-          for (int i = GameOptions.MIN_PLAYER_LIMIT; i <= GameOptions.MAX_PLAYER_LIMIT; i++) {
-        %>
-          <option <%= i == GameOptions.DEFAULT_PLAYER_LIMIT ? "selected='selected' " : "" %>value="<%= i %>"><%= i %></option>
-        <% } %>
+        
+          <option value="3">3</option>
+        
+          <option value="4">4</option>
+        
+          <option value="5">5</option>
+        
+          <option value="6">6</option>
+        
+          <option value="7">7</option>
+        
+          <option value="8">8</option>
+        
+          <option value="9">9</option>
+        
+          <option selected='selected' value="10">10</option>
+        
+          <option value="11">11</option>
+        
+          <option value="12">12</option>
+        
+          <option value="13">13</option>
+        
+          <option value="14">14</option>
+        
+          <option value="15">15</option>
+        
+          <option value="16">16</option>
+        
+          <option value="17">17</option>
+        
+          <option value="18">18</option>
+        
+          <option value="19">19</option>
+        
+          <option value="20">20</option>
+        
       </select>
       Having more than 10 players may get cramped, especially on smaller screens!
       <br/>
       <label id="spectator_limit_template_label" for="spectator_limit_template">Spectator limit:</label>
       <select id="spectator_limit_template" class="spectator_limit"
           aria-label="Spectator limit.">
-        <%
-          for (int i = GameOptions.MIN_SPECTATOR_LIMIT; i <= GameOptions.MAX_SPECTATOR_LIMIT; i++) {
-        %>
-          <option <%= i == GameOptions.DEFAULT_SPECTATOR_LIMIT ? "selected='selected' " : "" %>value="<%= i %>"><%= i %></option>
-        <% } %>
+        
+          <option value="0">0</option>
+        
+          <option value="1">1</option>
+        
+          <option value="2">2</option>
+        
+          <option value="3">3</option>
+        
+          <option value="4">4</option>
+        
+          <option value="5">5</option>
+        
+          <option value="6">6</option>
+        
+          <option value="7">7</option>
+        
+          <option value="8">8</option>
+        
+          <option value="9">9</option>
+        
+          <option selected='selected' value="10">10</option>
+        
+          <option value="11">11</option>
+        
+          <option value="12">12</option>
+        
+          <option value="13">13</option>
+        
+          <option value="14">14</option>
+        
+          <option value="15">15</option>
+        
+          <option value="16">16</option>
+        
+          <option value="17">17</option>
+        
+          <option value="18">18</option>
+        
+          <option value="19">19</option>
+        
+          <option value="20">20</option>
+        
       </select>
       Spectators can watch and chat, but not actually play.
       <br/>
@@ -433,18 +624,76 @@ boolean allowBlankCards = injector.getInstance(Key.get(new TypeLiteral<Boolean>(
           <a href="https://www.cardcastgame.com/browse/deck/RPH29">RPH29 - CAO Pack (WIP)</a>
         </legend>
       </fieldset>
-      <% if (allowBlankCards) { %>
+      
         <br/>
         <label id="blanks_limit_label" title="Blank cards allow a player to type in their own answer.">
           Also include <select id="blanks_limit_template" class="blanks_limit">
-          <%
-            for (int i = GameOptions.MIN_BLANK_CARD_LIMIT; i <= GameOptions.MAX_BLANK_CARD_LIMIT; i++) {
-          %>
-            <option <%= i == GameOptions.DEFAULT_BLANK_CARD_LIMIT ? "selected='selected' " : "" %>value="<%= i %>"><%= i %></option>
-          <% } %>
+          
+            <option selected='selected' value="0">0</option>
+          
+            <option value="1">1</option>
+          
+            <option value="2">2</option>
+          
+            <option value="3">3</option>
+          
+            <option value="4">4</option>
+          
+            <option value="5">5</option>
+          
+            <option value="6">6</option>
+          
+            <option value="7">7</option>
+          
+            <option value="8">8</option>
+          
+            <option value="9">9</option>
+          
+            <option value="10">10</option>
+          
+            <option value="11">11</option>
+          
+            <option value="12">12</option>
+          
+            <option value="13">13</option>
+          
+            <option value="14">14</option>
+          
+            <option value="15">15</option>
+          
+            <option value="16">16</option>
+          
+            <option value="17">17</option>
+          
+            <option value="18">18</option>
+          
+            <option value="19">19</option>
+          
+            <option value="20">20</option>
+          
+            <option value="21">21</option>
+          
+            <option value="22">22</option>
+          
+            <option value="23">23</option>
+          
+            <option value="24">24</option>
+          
+            <option value="25">25</option>
+          
+            <option value="26">26</option>
+          
+            <option value="27">27</option>
+          
+            <option value="28">28</option>
+          
+            <option value="29">29</option>
+          
+            <option value="30">30</option>
+          
           </select> blank white cards.
         </label>
-      <% } %>
+      
       <br/>
       <label id="game_password_template_label" for="game_password_template">Game password:</label>
       <input type="text" id="game_password_template" class="game_password"
