@@ -278,7 +278,7 @@
             <div class="game_black_card" tabindex="0">
             </div>
           </div>
-          <input type="button" class="confirm_card" value="Play Card" />
+          <input type="button" class="confirm_card" value="Confirm Selection" />
         </div>
         <div class="game_options">
         </div>
@@ -596,16 +596,13 @@
       </select>
       <br/>
       <fieldset class="card_sets">
-        <legend>Card Sets</legend>
-        <span class="base_card_sets"></span>
+	<legend>Card Sets</legend>
+	      <legend>Base Card Sets</legend>
+        		<span class="base_card_sets"></span>
+	      <legend>Expansion Cards</legend>
         <span class="extra_card_sets"></span>
-        <legend>Type /add ##### to add a CardCast deck. Suggested decks include:
-          <br>
-          <a href="https://www.cardcastgame.com/browse/deck/MMUSJ">MMUSJ - Cards Against The World</a>
-          <br>
-          <a href="https://www.cardcastgame.com/browse/deck/PCK9T">PCK9T - Cactus Cancer</a>
-          <br>
-          <a href="https://www.cardcastgame.com/browse/deck/RPH29">RPH29 - CAO Pack (WIP)</a>
+        <legend>Type /acc ##### to add a CardCast deck. Suggested decks include:
+        
         </legend>
       </fieldset>
       
