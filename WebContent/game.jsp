@@ -60,13 +60,13 @@
   <span id="nickbox_error" class="error"></span>
   <span id="note"></span>
   <p id="footer">
-    Pelican CAHis a Cards Against Humanity clone, which is available at
+    Pelican CAH is a Cards Against Humanity clone, which is available at
     <a href="http://www.cardsagainsthumanity.com/">cardsagainsthumanity.com</a>, where you can buy it
     or download and print it out yourself. It is based off of <a href="https://github.com/ajanata/PretendYoureXyzzy">Pretend You're Xyzzy</a>
     and is distributed under a
     <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/">Creative Commons - Attribution -
     Noncommercial - Share Alike license</a>. You may download the source code to this version from
-    <a href="https://github.com/Benji-Collins/CardsAgainstOriginality">GitHub</a>. For full license
+    <a href="https://github.com/sk1pp3rftw/pelicancah">GitHub</a>. For full license
     information, including information about included libraries, see the
     <a href="license.html">full license information</a>.
   </p>
@@ -219,7 +219,7 @@
         <br/>
         <span class="watermark"></span>
 	    </div>
-	    <div class="logo_text">Cards Againt Originality</div>
+	    <div class="logo_text">PelicanCAH</div>
 	  </div>
     <div class="card_metadata">
       <div class="draw hide">DRAW <div class="card_number"></div></div>
