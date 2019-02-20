@@ -82,8 +82,7 @@ h2,h3,h4 {
   margin: 0 0 .25em;
 }
 #menubar {
-  background:#555;
-  border-bottom:1px solid #333;
+  background:#bfbfbf;
   color:#fff;
   height: 25px;
   padding:.5em;
@@ -187,7 +186,7 @@ h2,h3,h4 {
   position: absolute;
   bottom: 0px;
   right: 14px;
-  background-color: #44475a;
+  background-color: #ffffff;
 }
 #tabs .ui-widget-content {
   background-color: #44475a;
