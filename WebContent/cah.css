@@ -1,7 +1,7 @@
 body {
   min-height: 640px;
-  background: #282a36;
-  color: #bcc3cd;
+  background: #eee;
+  color: #000;
   font-size: 16px;
   margin: 0;
   font-family: 'Source Sans Pro', sans-serif;
@@ -82,9 +82,9 @@ h2,h3,h4 {
   margin: 0 0 .25em;
 }
 #menubar {
-  background:#44475a;
-  border-bottom:1px solid #44475a;
-  color:#bcc3cd;
+  background:#555;
+  border-bottom:1px solid #333;
+  color:#fff;
   height: 25px;
   padding:.5em;
 }
@@ -113,7 +113,7 @@ h2,h3,h4 {
   overflow: auto;
 }
 .gamelist_lobby {
-  background: #44475a;
+  background: #fff;
   border-radius: .25em;
   width: 575px;
   height: 175px;
@@ -137,7 +137,7 @@ h2,h3,h4 {
   width: 100%;
   height: 75%;
   border: 1px solid #aaa;
-  background: linear-gradient(#44475a, #44475a) #44475a;
+  background: linear-gradient(#fff, #ddd) #ddd;
   border-radius: .25em;
   text-transform: uppercase;
   font-weight: 700;
@@ -148,7 +148,7 @@ h2,h3,h4 {
   width: 100%;
   height: 25%;
   border: 1px solid #aaa;
-  background: linear-gradient(#44475a, #44475a) #44475a;
+  background: linear-gradient(#fff, #ddd) #ddd;
   border-radius: .25em;
   text-transform: uppercase;
   font-weight: 700;
@@ -216,7 +216,7 @@ h2,h3,h4 {
 .log {
   width: 100%;
   height: 198px;
-  border: 2px solid #44475a;
+  border-style: none solid solid none;
   border-top: 2px solid #4b4d5f;
   color: #bcc3cd;
   position: absolute;
