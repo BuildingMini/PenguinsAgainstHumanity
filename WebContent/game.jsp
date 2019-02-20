@@ -5,58 +5,6 @@
 
 
 
-<link href="https://fonts.googleapis.com/css?family=Slabo+27px|Source+Sans+Pro" rel="stylesheet">
-    <style>
-    body {
-      min-height: 640px;
-      background: #282a36;
-      color: #bcc3cd;
-      font-size: 16px;
-      margin: 0;
-      font-family: 'Source Sans Pro', sans-serif;
-    }
-    #title {
-      font-family: 'Slabo 27px', serif;
-      color: #50fa7b;
-      text-align: center;
-      font-size: 100px;
-      margin-bottom: 0px;
-      margin-top: 60px;
-      outline: none;
-    }
-    #subtitle {
-      text-align: center;
-      font-size: 40px;
-      margin-top: 0px;
-    }
-    #footer {
-      text-align: center;
-      position: absolute;
-      bottom: 20px;
-      margin-left: 20px;
-      margin-right: 20px;
-    }
-    a {
-      color: #8be9fd;
-      text-decoration: none;
-    }
-    #wrapper {
-      text-align: center;
-      margin-top: 150px;
-    }
-    #button {
-      color: #ffb86c;
-      font-size: 2em;
-      text-align: center;
-      padding: 5px 5px;
-      cursor: pointer;
-      border: none;
-      outline: none;
-      background-color: #ffffff00;
-    }
-    </style>
-
-
 
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
