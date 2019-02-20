@@ -73,19 +73,6 @@
   <script>
     var note = document.getElementById("note");
     var nickbox = document.getElementById("nickbox");
-    if (navigator.appName == 'Microsoft Internet Explorer' ||  !!(navigator.userAgent.match(/Trident/) || navigator.userAgent.match(/rv:11/)) || (typeof $.browser !== "undefined" && $.browser.msie == 1))
-    {
-      note.innerHTML = "Your browser is not supported. Please use Chrome or Firefox.";
-      nickbox.style.display = "none";
-    }
-    else if (window.innerHeight <= 800)
-    {
-      note.innerHTML = "Your screen resolution is kinda small. Try zooming out to 80% (Ctrl -).";
-    }
-    else
-    {
-      note.innerHTML = "Enjoy ;)";
-    }
 </script>
 </div>
 
