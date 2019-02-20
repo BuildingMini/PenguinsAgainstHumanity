@@ -7,15 +7,15 @@
     <style>
     body {
       min-height: 640px;
-      background: #282a36;
-      color: #bcc3cd;
+      background: #ffffff;
+      color: #000000;
       font-size: 16px;
       margin: 0;
       font-family: 'Source Sans Pro', sans-serif;
     }
     #title {
       font-family: 'Slabo 27px', serif;
-      color: #50fa7b;
+      color: #000000;
       text-align: center;
       font-size: 100px;
       margin-bottom: 0px;
