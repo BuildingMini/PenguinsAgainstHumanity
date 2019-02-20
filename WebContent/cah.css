@@ -1,183 +1,626 @@
-[data-simplebar] {
-    position: relative;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-content: flex-start;
-    align-items: flex-start;
-    width: inherit;
-    height: inherit;
-    max-width: inherit;
-    max-height: inherit;
+body {
+  min-height: 640px;
+  background: #282a36;
+  color: #bcc3cd;
+  font-size: 16px;
+  margin: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+#title {
+  font-family: 'Slabo 27px', serif;
+  color: #50fa7b;
+  text-align: center;
+  font-size: 100px;
+  margin-bottom: 0px;
+  margin-top: 50px;
+  outline: none;
+}
+a {
+  color: #8be9fd;
+  text-decoration: none;
+}
+#subtitle {
+  text-align: center;
+  font-size: 40px;
+  margin-top: 0px;
+}
+#nickbox {
+  border: none;
+  display: inline;
+  padding: 5px;
+  padding-top: 40px;
+  background-color: none;
+  align-self: center;
+  font-size: 2em;
+}
+#nickname {
+  color: #bcc3cd;
+  background-color: #44475a;
+  border-left: 5px solid #44475a;
+  border-right: none;
+  border-top: none;
+  border-bottom: none;
+  height: 2em;
+  width: 20em;
+  outline: none;
+  vertical-align: middle;
+}
+#nickbox_error {
+  text-align: center;
+}
+#nicknameconfirm {
+  vertical-align: middle;
+  border: none;
+  background-color: #44475a;
+  height: 2.2em;
+  width: 2.7em;
+  color: #bcc3cd;
+  outline: none;
+}
+#footer {
+  text-align: center;
+  position: absolute;
+  bottom: 15px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+#welcome {
+  display: flex;
+  flex-direction: column;
+}
+#gamebody {
+  overflow: hidden;
+}
+#note {
+  text-align: center;
+  font-size: 20px;
+}
+.card, #game_list {
+  font-family: "helvetica neue", helvetica, Arial, sans-serif;
+}
+h2,h3,h4 {
+  margin: 0 0 .25em;
+}
+#menubar {
+  background:#44475a;
+  border-bottom:1px solid #44475a;
+  color:#bcc3cd;
+  height: 25px;
+  padding:.5em;
+}
+#menubar_left {
+  float: left;
+}
+#menubar_right {
+  float: right;
+}
+#canvas {
+  height: 533px;
+  overflow: none;
+  position: relative;
+  width: 100%;
+}
+#main {
+  height: 506px;
+  padding: .5em;
+}
+#welcome {
+  padding: 1em;
+}
+#game_list {
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+}
+.gamelist_lobby {
+  background: #44475a;
+  border-radius: .25em;
+  width: 575px;
+  height: 175px;
+  float: left;
+  border: 1px solid #ccc;
+  margin: 4px;
+}
+.gamelist_lobby_left {
+  width: 77%;
+  height: 100%;
+  padding: .5em 1.5%;
+  float: left;
 }
 
-.simplebar-wrapper {
-    overflow: hidden;
-    width: inherit;
-    height: inherit;
-    max-width: inherit;
-    max-height: inherit;
+.gamelist_lobby_right {
+  width: 20%;
+  height: 100%;
+  float: right;
+}
+.gamelist_lobby_join {
+  width: 100%;
+  height: 75%;
+  border: 1px solid #aaa;
+  background: linear-gradient(#44475a, #44475a) #44475a;
+  border-radius: .25em;
+  text-transform: uppercase;
+  font-weight: 700;
+  white-space: normal;
+  color: #bcc3cd;
+}
+.gamelist_lobby_spectate {
+  width: 100%;
+  height: 25%;
+  border: 1px solid #aaa;
+  background: linear-gradient(#44475a, #44475a) #44475a;
+  border-radius: .25em;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #bcc3cd;
+}
+.gamelist_lobby_status {
+  float: right;
+  font-weight: 700;
+}
+.gamelist_lobby_status_joinable {
+  color: green;
+}
+.gamelist_lobby_status_unjoinable {
+  color: #c0c0c0;
+}
+#bottom {
+  width: 100%;
+  height: 215px;
+  position: absolute;
+  top: 543px;
+  min-height: 100px;
+}
+#info_area {
+  width: 250px;
+  height: 100%;
+  position: absolute;
+  bottom: 0px;
+  min-height: 100px;
+  border: none;
+}
+#tabs {
+  min-height: 100px;
+  width: 50%;
+  height: 100%;
+  border: none;
+  position: absolute;
+  bottom: 0px;
+  right: 14px;
+  background-color: #44475a;
+}
+#tabs .ui-widget-content {
+  background-color: #44475a;
 }
 
-.simplebar-mask {
-    direction: inherit;
-    position: absolute;
-    overflow: hidden;
-    padding: 0;
-    margin: 0;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    width: auto !important;
-    height: auto !important;
-    z-index: 0;
+#tabs .ui-widget {
+  font-height: 16px !important;
 }
-
-.simplebar-offset {
-    direction: inherit !important;
-    box-sizing: inherit !important;
-    resize: none !important;
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    padding: 0;
-    margin: 0;
-    -webkit-overflow-scrolling: touch;
+.tab-button {
+  font-size: 14px !important;
 }
-
-.simplebar-content {
-    direction: inherit;
-    box-sizing: border-box !important;
-    position: relative;
-    display: block;
-    height: 100%; /* Required for horizontal native scrollbar to not appear if parent is taller than natural height */
-    width: auto;
-    visibility: visible;
-    overflow: scroll; /* Scroll on this element otherwise element can't have a padding applied properly */
-    max-width: 100%; /* Not required for horizontal scroll to trigger */
-    max-height: 100%; /* Needed for vertical scroll to trigger */
+.cardset_filter_list {
+  display: inline-block;
+  width: 33%;
 }
-
-.simplebar-placeholder {
-    max-height: 100%;
-    max-width: 100%;
-    width: 100%;
-    pointer-events: none;
+.cardset_filter_list select {
+  height: 150px;
+  width: 100%;
 }
-
-.simplebar-height-auto-observer-wrapper {
-    box-sizing: inherit !important;
-    height: 100%;
-    width: inherit;
-    max-width: 1px;
-    position: relative;
-    float: left;
-    max-height: 1px;
-    overflow: hidden;
-    z-index: -1;
-    padding: 0;
-    margin: 0;
-    pointer-events: none;
-    flex-grow: inherit;
-    flex-shrink: 0;
-    flex-basis: 0;
+.cardset_filter_list span {
+  font-weight: bold;
 }
-
-.simplebar-height-auto-observer {
-    box-sizing: inherit;
-    display: block;
-    opacity: 0;
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 1000%;
-    width: 1000%;
-    min-height: 1px;
-    min-width: 1px;
-    overflow: hidden;
-    pointer-events: none;
-    z-index: -1;
+.cardset_filter_list .buttons {
+  text-align: center;
 }
-
-.simplebar-track {
-    z-index: 1;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    pointer-events: none;
+.log {
+  width: 100%;
+  height: 198px;
+  border: 2px solid #44475a;
+  border-top: 2px solid #4b4d5f;
+  color: #bcc3cd;
+  position: absolute;
+  bottom: 28px;
+  right: 0px;
+  overflow: auto;
+  min-height: 43px;
+  font-size: 16px;
+  padding: none !important;
 }
-
-.simplebar-scrollbar {
-    position: absolute;
-    right: 2px;
-    width: 7px;
-    min-height: 10px;
+#tab-preferences input[type='button'] {
+  float: right;
 }
-
-.simplebar-scrollbar:before {
-    position: absolute;
-    content: "";
-    background: #282a36;
-    border-radius: 7px;
-    left: 0;
-    right: 0;
-    opacity: 0;
-    transition: opacity 0.4s linear;
+#tab-preferences, #tab-gamelist-filters {
+  overflow-y: auto;
 }
-
-.simplebar-track .simplebar-scrollbar.visible:before {
-    /* When hovered, remove all transitions from drag handle */
-    opacity: 0.5;
-    transition: opacity 0 linear;
+#chatwrapper {
+  left: 1px;
+  bottom: 1px;
+  position: absolute;
+  padding: 0px;
+  width: 100%;
+  display: flex;
 }
-
-.simplebar-track.vertical {
-    top: 0;
-    width: 11px;
+.chat {
+  border: none;
+  outline: none;
+  color: #f6faff;
+  background-color: #6272a4;
+  height: 25px;
+  width: 95% !important;
+  font-size: 14px;
+  padding-left: 5px;
+  padding-right: none;
+  padding-top: none;
+  padding-bottom: none;
+  order: 1;
 }
-
-.simplebar-track.vertical .simplebar-scrollbar:before {
-    top: 2px;
-    bottom: 2px;
+.chat_submit {
+  width: 55px;
+  height: 25px;
+  vertical-align: middle;
+  margin: 0px;
+  padding: 0px;
+  font-size: 14px;
+  color: #f6faff;
+  background-color: #6272a4;
+  border: 2px solid #6272a4;
+  outline: none;
+  position:absolute;
+  right:0px;
+  bottom:0px;
 }
-
-.simplebar-track.horizontal {
-    left: 0;
-    height: 11px;
+.button {
+  outline: none;
+  background-color: #6272a4;
+  color: #f6faff;
+  border: 2px solid #6272a4;
 }
-
-.simplebar-track.horizontal .simplebar-scrollbar:before {
-    height: 100%;
-    left: 2px;
-    right: 2px;
+.card {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border: 1px solid #999;
+  padding: 15px;
+  font-size: 15pt;
+  float: left;
+  border-radius: .25em;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
 }
-
-.horizontal.simplebar-track .simplebar-scrollbar {
-    right: auto;
-    left: 0;
-    top: 2px;
-    height: 7px;
-    min-height: 0;
-    min-width: 10px;
-    width: auto;
+.blackcard {
+  background: #231f20;
+  color: white;
+  background-image:linear-gradient(#231f20,#231f20 75%, #333)
 }
-
-/* Rtl support */
-[data-simplebar-direction="rtl"] .simplebar-track.vertical {
-    right: auto;
-    left: 0;
+.whitecard {
+  background: white;
+  color: #231f20;
 }
-
-.hs-dummy-scrollbar-size {
-    direction: rtl;
-    position: fixed;
-    opacity: 0;
-    visibility: hidden;
-    height: 500px;
-    width: 500px;
-    overflow-y: hidden;
-    overflow-x: scroll;
+.gamelist_lobby{
+  background-image: linear-gradient(#44475a,#44475a 75%,#44475a);
+}
+.whitecard{
+  background-image: linear-gradient(white,white 75%,white);
+}
+.cah {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  margin: 15px;
+}
+.hide {
+  display: none;
+}
+.game {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+.your_hand {
+  position: absolute;
+  bottom: 10px;
+  right: 5px;
+}
+.gamelist_hostname {
+  color: #50fa7b;
+}
+.game_hand {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  height: 30%;
+  margin-bottom: 25px;
+}
+.game_hand_filter {
+  height: 100%;
+  position: relative;
+  background: #44475aaf;
+  z-index: 100;
+  text-align: center;
+}
+.game_hand_filter_text {
+  position: absolute;
+  color: #f6faff;
+  top: 50%;
+  left: 50%;
+  font-size: 300%;
+  margin-top: -30px;
+  background: #44475ad5;
+  padding:.25em;
+}
+.game_hand_cards {
+  position: absolute;
+  bottom: 0px;
+  height: 100%;
+  width: 99%;
+  padding-left: 2px;
+  min-width: 750px;
+}
+.game_hand_cards .card {
+  cursor: pointer;
+}
+.game_top {
+  padding: 5px;
+}
+.game_menu_bar {
+  float: right;
+}
+.game_message {
+  font-size: 150%;
+  font-weight:bold;
+  color: #50fa7b;
+  margin-right: 5px;
+}
+.game_black_card_wrapper {
+  width: 232px;
+  float: left;
+}
+.game_black_card {
+  width: 232px;
+  height: 232px;
+  margin-top: 15px;
+}
+.confirm_card {
+  background-color: #6272a4;
+  border: 2px solid #6272a4;
+  color: #f6faff;
+  float: left;
+  margin-top: 10px;
+  width: 100%;
+  z-index: 500;
+  outline: none;
+}
+.game_left_side {
+  float: left;
+  width: 232px;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+.game_right_side, .game_options {
+  position: absolute;
+  left: 246px;
+  width: 1000px;
+}
+.error {
+  color: #ff5555;
+}
+span.debug {
+  color: #bcc3cd;
+}
+span.admin {
+  color: #ffb86c;
+}
+.game_options {
+  background-color: #44475a;
+  z-index: 500;
+  padding-bottom: 5px;
+}
+.game_right_side_box {
+  height: 60%;
+  margin: 10px;
+}
+.game_right_side_cards {
+  margin-top: 15px;
+  min-width: 600px;
+  cursor: pointer;
+  z-index: 200;
+}
+.game_right_side_cards .card_holder, .game_white_cards_binder {
+  z-index: 200;
+}
+.game_white_cards_binder {
+  border: 3px solid silver;
+  display: inline-block;
+  margin-right: 4px;
+  margin-bottom: 4px;
+  border-radius: .25em;
+}
+.card_holder {
+  float: left;
+  position: relative;
+  overflow-x: visible !important;
+  overflow-y: visible !important;
+  margin-right: 2px;
+  z-index: 1;
+}
+.game_white_cards_binder .card_holder {
+  margin-right: 0px;
+}
+.scoreboard {
+  width: 250px;
+  height: 100%;
+  position: absolute;
+  overflow-y: hidden;
+}
+.scorecard {
+  background: #44475a;
+  height: 36px;
+  padding:.25em .5em;
+  font-size: 11pt;
+}
+.scorecard:nth-child(even) {
+  background:#44475a;
+}
+.scorecard_status {
+  float: right;
+  margin-right: 13px;
+}
+.clear {
+  clear: both;
+}
+.selected {
+  color: #fff;
+  background: #3c7fb1 !important;
+}
+.logo {
+  position: absolute;
+  width: 250px;
+  height: 32px;
+  bottom: 15px;
+  left: 15px;
+}
+.logo_element {
+  top: 2px;
+  position: absolute;
+  width: 22px;
+  height: 22px;
+}
+.blackcard .logo_element {
+  border: 1px solid #231f20;
+}
+.logo_1 {
+  left: 2px;
+}
+.blackcard .logo_1 {
+  background: #57585a;
+}
+.whitecard .logo_1 {
+  background: #231f20;
+}
+.logo_2 {
+  left: 10px;
+}
+.blackcard .logo_2 {
+  background: #b2b3b7;
+}
+.whitecard .logo_2 {
+  background: #636366;
+}
+.logo_3 {
+  left: 16px;
+  top: 5px;
+}
+.blackcard .logo_3 {
+  background: white;
+  color: black;
+}
+.whitecard .logo_3 {
+  background: #c7c8ca;
+  color: black;
+}
+.watermark_container {
+  font-size: 5pt;
+  text-align: center;
+}
+.logo_text {
+  position: absolute;
+  font-size: 8pt;
+  font-weight: bold;
+  left: 45px;
+  bottom: 4px;
+}
+.card_metadata {
+  position: absolute;
+  right: 15px;
+  bottom: 15px;
+}
+.draw, .pick {
+  float: right;
+  clear: both;
+  font-weight: bold;
+  font-size: 12pt;
+}
+.card_number {
+  width: 20px;
+  height: 20px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+}
+.blackcard .card_number {
+  background: white;
+  display: inline-block;
+  color: #231f20;
+  text-align: center;
+}
+.previous_round {
+  z-index: 50;
+  border: 3px solid black;
+  width: 60%;
+  height: 60%;
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  padding: 5px;
+}
+.previous_round_close {
+  position: absolute;
+  right: 0px;
+}
+.card_set_label {
+  margin-right: 15px;
+}
+.scorecard_score, .scorecard_player {
+  font-weight:700;
+}
+.scorecard_score, .scorecard_point_title {
+  color: #ff79c6;
+}
+.scorecard_player {
+  color: #ffb86c;
+}
+.checkbox {
+  margin-right: 4px;
+  white-space: nowrap;
+}
+.checkbox input {
+  vertical-align: middle;
+}
+.checkbox span {
+  vertical-align: middle;
+}
+.nowrap {
+  white-space: nowrap;
+}
+.cardnum {
+  position: absolute;
+  right: 10px;
+  bottom: 19px;
+  font-size: 8pt;
+}
+dfn {
+  border-bottom: 1px dotted black;
+}
+#tweetbox {
+  float: right;
+}
+.gamelink {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.imagecard {
+  height: 100%;
+  width: 100%;
+}
+.card_text {
+  word-wrap: break-word;
+  overflow: hidden;
+  outline: none;
 }
