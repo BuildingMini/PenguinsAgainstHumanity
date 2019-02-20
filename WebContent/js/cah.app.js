@@ -213,7 +213,7 @@ function chatsubmit_click(game_id, parent_element) {
             case 'names':
                 ajax = cah.Ajax.build(cah.$.AjaxOperation.NAMES);
                 break;
-            case 'cc':
+            case 'acc':
                 if (game_id !== null) {
                     ajax = cah.Ajax.build(cah.$.AjaxOperation.CARDCAST_ADD_CARDSET).withCardcastId(
                         text.split(' ')[0]).withGameId(game_id);
