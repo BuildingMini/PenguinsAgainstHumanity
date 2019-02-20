@@ -597,13 +597,9 @@
       <br/>
       <fieldset class="card_sets">
 	<legend>Card Sets</legend>
-	      <legend>Base Card Sets</legend>
-        		<span class="base_card_sets"></span>
-	      <legend>Expansion Cards</legend>
+        <span class="base_card_sets"></span>
         <span class="extra_card_sets"></span>
-        <legend>Type /acc ##### to add a CardCast deck. Suggested decks include:
-        
-        </legend>
+        <legend>Type /acc ##### to add a CardCast deck. <a href="https://rentry.co/pelican">my faves</a></legend>
       </fieldset>
       
         <br/>
