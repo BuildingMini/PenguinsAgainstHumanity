@@ -8,7 +8,7 @@ body {
 }
 #title {
   font-family: 'Slabo 27px', serif;
-  color: #000000;
+  color: #babbbc;
   text-align: center;
   font-size: 100px;
   margin-bottom: 0px;
@@ -34,8 +34,8 @@ a {
   font-size: 2em;
 }
 #nickname {
-  color: #bcc3cd;
-  background-color: #000000;
+  color: #000000;
+  background-color: #ffffff;
   border-left: 5px solid #44475a;
   border-right: none;
   border-top: none;
