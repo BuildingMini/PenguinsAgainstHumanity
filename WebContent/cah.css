@@ -112,56 +112,60 @@ h2,h3,h4 {
   overflow: auto;
 }
 .gamelist_lobby {
-  background: #fff;
-  border-radius: .25em;
-  width: 575px;
-  height: 175px;
-  float: left;
-  border: 1px solid #ccc;
-  margin: 4px;
+    background: #fff;
+    border-radius: .25em;
+    width: 575px;
+    height: 175px;
+    float: left;
+    border: 1px solid #ccc;
+    margin: 4px;
 }
+
 .gamelist_lobby_left {
-  width: 77%;
-  height: 100%;
-  padding: .5em 1.5%;
-  float: left;
+    width: 77%;
+    height: 100%;
+    padding: .5em 1.5%;
+    float: left;
 }
 
 .gamelist_lobby_right {
-  width: 20%;
-  height: 100%;
-  float: right;
+    width: 20%;
+    height: 100%;
+    float: right;
 }
+
 .gamelist_lobby_join {
-  width: 100%;
-  height: 75%;
-  border: 1px solid #aaa;
-  background: linear-gradient(#fff, #ddd) #ddd;
-  border-radius: .25em;
-  text-transform: uppercase;
-  font-weight: 700;
-  white-space: normal;
-  color: #bcc3cd;
+    width: 100%;
+    height: 75%;
+    border: 1px solid #aaa;
+    background: linear-gradient(#fff, #ddd) #ddd;
+    border-radius: .25em;
+    text-transform: uppercase;
+    font-weight: 700;
+    white-space: normal;
 }
+
 .gamelist_lobby_spectate {
-  width: 100%;
-  height: 25%;
-  border: 1px solid #aaa;
-  background: linear-gradient(#fff, #ddd) #ddd;
-  border-radius: .25em;
-  text-transform: uppercase;
-  font-weight: 700;
-  color: #bcc3cd;
+    width: 100%;
+    height: 25%;
+    border: 1px solid #aaa;
+    background: linear-gradient(#fff, #ddd) #ddd;
+    border-radius: .25em;
+    text-transform: uppercase;
+    font-weight: 700;
 }
+
 .gamelist_lobby_status {
-  float: right;
-  font-weight: 700;
+    float: right;
+    font-weight: 700;
 }
+
 .gamelist_lobby_status_joinable {
-  color: green;
+    color: green;
 }
+
 .gamelist_lobby_status_unjoinable {
-  color: #c0c0c0;
+    color: #c0c0c0;
 }
 #bottom {
   width: 100%;
@@ -372,7 +376,7 @@ h2,h3,h4 {
 .game_message {
   font-size: 150%;
   font-weight:bold;
-  color: #50fa7b;
+  color: #000000;
   margin-right: 5px;
 }
 .game_black_card_wrapper {
@@ -415,7 +419,7 @@ span.admin {
   color: #ffb86c;
 }
 .game_options {
-  background-color: #44475a;
+  background-color: #e2e2e2;
   z-index: 500;
   padding-bottom: 5px;
 }
@@ -463,7 +467,7 @@ span.admin {
   font-size: 11pt;
 }
 .scorecard:nth-child(even) {
-  background:#44475a;
+  background: #cecece;
 }
 .scorecard_status {
   float: right;
@@ -579,10 +583,10 @@ span.admin {
   font-weight:700;
 }
 .scorecard_score, .scorecard_point_title {
-  color: #ff79c6;
+  color: #6b6b6b;
 }
 .scorecard_player {
-  color: #ffb86c;
+  color: #000000;
 }
 .checkbox {
   margin-right: 4px;
