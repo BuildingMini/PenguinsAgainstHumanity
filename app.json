@@ -1,6 +1,6 @@
 {
-  "name": "PYX server",
-  "description": "A Pretend You're Xyzzy server",
+  "name": "PelicanCAH",
+  "description": "A fork of Pretend You're Xyzzy",
   "repository": "https://github.com/devgianlu/PretendYoureXyzzy",
   "keywords": [
     "game",
