@@ -1,7 +1,7 @@
 body {
   min-height: 640px;
   background: #eee;
-  color: #000;
+  color: #6f6f6f;
   font-size: 16px;
   margin: 0;
   font-family: 'Source Sans Pro', sans-serif;
@@ -16,7 +16,7 @@ body {
   outline: none;
 }
 a {
-  color: #8be9fd;
+  color: #000000;
   text-decoration: none;
 }
 #subtitle {
@@ -36,7 +36,7 @@ a {
 #nickname {
   color: #000000;
   background-color: #ffffff;
-  border-left: 5px solid #44475a;
+  border-left: 5px solid #ffffff;
   border-right: none;
   border-top: none;
   border-bottom: none;
