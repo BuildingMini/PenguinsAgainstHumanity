@@ -14,7 +14,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <meta name="description" content="A Cards Against Humanity clone. Open sourced and available on GitHub.">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Pelican CAH</title>
+<title>Penguins Against Humanity</title>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/1.2.1/jquery-migrate.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.3.0/jquery.cookie.min.js"></script>
@@ -219,7 +219,7 @@
         <br/>
         <span class="watermark"></span>
 	    </div>
-	    <div class="logo_text">PelicanCAH</div>
+	    <div class="logo_text">Penguins Against Humanity</div>
 	  </div>
     <div class="card_metadata">
       <div class="draw hide">DRAW <div class="card_number"></div></div>
